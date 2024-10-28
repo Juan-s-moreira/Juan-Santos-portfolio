@@ -84,35 +84,113 @@
     </nav>
     <main>
       <div class="main__content1">
-        <h1>
-          <b>Desenvolvimento front-end</b> para criar experiências que facilitam
-          e inspiram.
-        </h1>
-        <p>Juan Santos, Desenvolvedor Front-end.</p>
-        <ul class="menu menu--social">
-          <li>
-            <a class="menu__link" href="https://github.com/Juan-s-moreira">
-              <i class="menu__link bi bi-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu__link"
-              href="https://www.linkedin.com/in/juan-s-moreira"
-            >
-              <i class="menu__link bi bi-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a class="menu__link" href="">
-              <i class="menu__link bi bi-whatsapp"></i>
-            </a>
-          </li>
-        </ul>
+        <section id="sobre" class="about">
+          <div class="about__content1">
+            <img
+              src="./assets/images/profile-pic.jpeg"
+              alt=""
+              class="about__photo"
+            />
+            <div class="about__description">
+              <h2>Sobre Mim</h2>
+              <h1>
+                <b>Desenvolvimento front-end</b> para criar experiências que
+                facilitam e inspiram.
+              </h1>
+              <p>Juan Santos, Desenvolvedor Front-end.</p>
+              <p>Juan Santos</p>
+              <ul class="menu menu--social">
+                <li>
+                  <a
+                    class="menu__link"
+                    href="https://github.com/Juan-s-moreira"
+                  >
+                    <i class="menu__link bi bi-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="menu__link"
+                    href="https://www.linkedin.com/in/juan-s-moreira"
+                  >
+                    <i class="menu__link bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="menu__link" href="">
+                    <i class="menu__link bi bi-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="about__icons">
+                <i class="bi bi-translate"></i>
+                <span>Inglês: Avançado C1</span>
+              </div>
+              <div class="description__buttons">
+                <a
+                  href="https://www.linkedin.com/in/juan-s-moreira"
+                  target="_blank"
+                >
+                  <button class="btn btn--primary">
+                    <span>Conecte-se Comigo</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </button>
+                </a>
+                <a href="">
+                  <button class="btn">
+                    <span>Currículo</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about__content2">
+            <div class="col1">
+              <div class="row1">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                  <div class="accordion__item">
+                    <button class="accordion__header start">
+                     <span> Bootcamp Dio com Ri happy| front-end do zero</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                      <p>
+                        Digital Innovation One. SEP 2024 - OCT 2024. 75h 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <button class="accordion__header">
+                     <span> NLW JOURNEY FULLSTACK</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                      <p>
+                       ROCKETSEAT. JUL 2024. 75h 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <button class="accordion__header end">
+                     <span> IMersão Dev Com Google Gemini</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Alura. SEP 2024 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="main__content2">
-        <img src="./assets/images/profile-pic.jpeg" alt="" />
+        <!-- <img src="./assets/images/profile-pic.jpeg" alt="" /> -->
       </div>
     </main>
     <section class="skills">
@@ -163,10 +241,175 @@
       </ul>
     </section>
 
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="./assets/images/projects/sinais-em-foco.png"
+          alt=""
+        />
+        <div class="card__body">
+          <h3 class="card__title">Sinais Em Foco</h3>
+          <p class="card__description"></p>
+          <ul class="card__list">
+            <li>Alfabeto em libras</li>
+            <li>Input para saber palavras</li>
+          </ul>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/HTML5.svg"
+                alt="HTML"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/CSS3.svg"
+                alt="CSS"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/JavaScript.svg"
+                alt="JAVASCRIPT"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://juan-s-moreira.github.io/Sinais-Em-Foco/">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/Juan-s-moreira/Sinais-Em-Foco">
+              <button class="btn">
+                <span>Repositorio</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img
+          class="card__cover"
+          src="./assets/images/projects/Mundo-Invertido.png"
+          alt=""
+        />
+        <div class="card__body">
+          <h3 class="card__title">Mundo Invertido</h3>
+          <p class="card__description"></p>
+          <ul class="card__list">
+            <li>Alfabeto em libras</li>
+            <li>Input para saber palavras</li>
+          </ul>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/HTML5.svg"
+                alt="HTML"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/CSS3.svg"
+                alt="CSS"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/JavaScript.svg"
+                alt="JAVASCRIPT"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://juan-s-moreira.github.io/Mundo-invertido/">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/Juan-s-moreira/Mundo-invertido">
+              <button class="btn">
+                <span>Repositorio</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img
+          class="card__cover"
+          src="./assets/images/projects/siteFilmes.png"
+          alt=""
+        />
+        <div class="card__body">
+          <h3 class="card__title">Seu Site de Filmes</h3>
+          <p class="card__description"></p>
+          <ul class="card__list">
+            <li>Alfabeto em libras</li>
+            <li>Input para saber palavras</li>
+          </ul>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/HTML5.svg"
+                alt="HTML"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/CSS3.svg"
+                alt="CSS"
+              />
+            </li>
+            <li class="skills__item">
+              <img
+                class="skills__logo"
+                src="./assets/images/technologies/JavaScript.svg"
+                alt="JAVASCRIPT"
+              />
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://imers-o-alura-seven.vercel.app">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/Juan-s-moreira/SeuSiteDeFilmes">
+              <button class="btn">
+                <span>Repositorio</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Juan-s-moreira">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>
+      </a>
+    </section>
+
     <footer>
       <p>
         2024. Todos os direitos reservados. Juan Santos. Desenvolvido Por
-        <a href="https://github.com/Juan-s-moreira">Juan Santos</a>
+        <a href="https://github.com/Juan-s-moreira" target="_blank"
+          >Juan Santos</a
+        >
       </p>
     </footer>
 
