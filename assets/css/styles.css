@@ -490,6 +490,11 @@ footer p {
     .menu--social .menu__link {
         font-size: 2.5rem;
     }
+    .menu--social .menu__link:hover {
+        color: var(--primary-color);
+    }
+
+
     .about__content1 img {
         height: 18rem;
         width: 18rem;
