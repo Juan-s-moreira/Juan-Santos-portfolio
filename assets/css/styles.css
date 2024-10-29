@@ -296,11 +296,29 @@ main{
     height: 2rem;
 }
 
+.about__description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description__buttons{
+    margin: .25rem 0 2rem 0;
+}
+
 .about__content2 .col1 .row1,
 .about__content2 .col1 .row2{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+
+.about__content1 img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1.25rem 0 2rem 4.30rem;
 }
 
 #accordion{
@@ -359,13 +377,7 @@ main{
     transform: rotate(180deg);
 }
 
-.about__content1 img{
-    height: 15rem;
-    width: 15rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 1.25rem 0 2rem 4.30rem;
-}
+
 
 .menu--social .menu__link{
     font-size: 1.5rem;
