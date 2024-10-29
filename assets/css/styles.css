@@ -71,7 +71,11 @@ h1, h2, h3{
 p{
     font-size: 1.25rem;
     text-align: justify;
-    color: var(--text-color);
+    color: var(--title-color);
+}
+
+span{
+    color: var(--title-color);
 }
 
 .header {
@@ -115,6 +119,7 @@ p{
     bottom: 0;
     justify-content: space-between;
     border: 1px solid var(--primary-border-color);
+    background: var(--secondary-bg-color);
 }
 
 .menu--mobile .menu__link {
@@ -273,7 +278,7 @@ main{
     font-size: 1.5rem;
 }
 
-.car__description{
+.card__description{
     font-size: 1rem;
     color: var(--title-color);
 }
@@ -355,18 +360,35 @@ main{
 }
 
 .about__content1 img{
-    height: 18rem;
-    width: 18rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
+    margin: 1.25rem 0 2rem 4.30rem;
 }
 
 .menu--social .menu__link{
     font-size: 1.5rem;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact .btn{
+margin: 1rem 0 2rem 0;}
+
 footer{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     background: #333;
 }
 
@@ -426,6 +448,12 @@ footer p{
     .menu--social .menu__link{
         font-size: 2.5rem;
     }
+    .about__content1 img{
+        height: 18rem;
+        width: 18rem;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
 
     .about__icons .bi-translate{
         font-size: 1.5rem;
@@ -437,6 +465,17 @@ footer p{
     .skills{
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
+    }
+
+    .about__content1 img{
+        height: 25rem;
+        width: 25rem;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+
+    .description__buttons{
+        flex-direction: row;
     }
 
     footer{
@@ -458,16 +497,19 @@ footer p{
         width: 55%;
     }
 
-    .about{
-        gap: 5rem;
-    }
-
-    .about__content1, .about__content2{
+    .about__description{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 1.25rem;
+    }
+        
+    .about__content1, .about__content2{
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 5rem;
+        margin-top: 5rem;
     }
 
     .about__description h2{
@@ -475,6 +517,8 @@ footer p{
     }
 
     .description__buttons{
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
     }
 }
